@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="50dp"
+    android:paddingEnd="10dp">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/sent_drawable"
+        android:maxHeight="100dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageinMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="9dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="5dp"
+            android:visibility="gone"
+            app:srcCompat="@drawable/chatifyimg" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cardView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:background="#2D3D3D3D"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/previewTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Title"
+                android:textColor="#000000"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/previewDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Descri[tion"
+                android:textColor="#000000"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/previewTitle" />
+
+            <TextView
+                android:id="@+id/previewWebsite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="www.Chaify.com"
+                android:textColor="#000000"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/previewDescription" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:fontFamily="@font/quicksand_medium"
+            android:paddingStart="10dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="5dp"
+            android:paddingBottom="5dp"
+            android:text="HI HOw are you"
+            android:textColor="#FFFFFF"
+            android:textColorLink="#64DD17"
+            android:textSize="16sp"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:gravity="end"
+            android:orientation="horizontal"
+            android:paddingEnd="5dp"
+            android:paddingBottom="5dp">
+
+            <ImageView
+                android:id="@+id/downloadBtn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="start"
+                android:scaleType="centerCrop"
+                android:visibility="gone"
+                app:srcCompat="@drawable/downloading" />
+
+            <ImageView
+                android:id="@+id/feeling"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+
+                android:layout_gravity="start|center_vertical"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:foregroundGravity="left"
+                android:scaleType="fitStart"
+                android:visibility="gone"
+                app:srcCompat="@drawable/ic_fb_love" />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|end"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/baloo_bhai"
+                android:foregroundGravity="right"
+                android:paddingEnd="5dp"
+                android:text="10:40 AM"
+                android:textColor="#BDBDBD"
+                android:textSize="11sp" />
+
+            <ImageView
+                android:id="@+id/tickMark"
+                android:layout_width="20dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center_vertical|end"
+                app:srcCompat="@android:drawable/ic_menu_send" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

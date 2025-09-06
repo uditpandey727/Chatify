@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/chats"
+        android:icon="@drawable/chat"
+        android:title="Chats" />
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/home"
+        android:title="Home" />
+    <item
+        android:id="@+id/ai"
+        android:icon="@drawable/ai"
+        android:title="AI" />
+    <item
+        android:id="@+id/users"
+        android:icon="@drawable/contacts"
+        android:title="Users" />
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/user"
+        android:title="profile" />
+</menu>

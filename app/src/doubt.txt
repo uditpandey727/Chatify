@@ -1,0 +1,3 @@
+activity_group_chat.xml
+msgadapter.java
+grpmsgadapter.java
